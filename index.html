@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Title & Meta Description -->
+    <title>שגית מויאל | טיפול רגשי CBT בנתניה — נשים ובני נוער</title>
+    <meta name="description" content="טיפול רגשי ממוקד בשיטת CBT בנתניה. שגית מלווה נשים ובני נוער בהתמודדות עם חרדה, חוסר ביטחון, עומס רגשי ודחיינות. טיפול בחרדות לנוער. שיחת ייעוץ ואבחון חינם.">
+    <meta name="keywords" content="טיפול רגשי בנתניה, טיפול CBT, שגית מויאל, הדרכת הורים, טיפול בחרדות, טיפול רגשי לנוער, פסיכותרפיה">
+    <meta name="geo.region" content="IL">
+    <meta name="geo.placename" content="נתניה">
+    <link rel="canonical" href="https://www.yourdomain.co.il/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="טיפול רשגי CBTfocus שינוי שנראה לעין נתניה והסביבה">
+    <meta property="og:description" content="טיפול רגשי ממוקד בשיטת CBT בנתניה. התמודדות עם חרדה, חוסר ביטחון ועומס רגשי. שיחת ייעוץ ואבחון חינם — שגית מויאל, מטפלת CBT מוסמכת.">
+    <meta property="og:image" content="https://www.yourdomain.co.il/images/clinic-hero.png">
+    <meta property="og:url" content="https://www.yourdomain.co.il/">
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:site_name" content="שגית מויאל — CBT Focus">
+    
+    <!-- פונטים: Heebo עצמי דרך styles.css + preload ל-LCP (ללא רשת חיצונית) -->
+    <link rel="preload" href="fonts/heebo-v28-hebrew_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/heebo-v28-hebrew_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- LCP: תמונת רקע ה-Hero (AVIF) -->
+    <link rel="preload" as="image" href="images/clinic-hero.avif" type="image/avif" imagesrcset="images/clinic-hero.avif 1200w" imagesizes="100vw">
+    
+    <!-- CSS + Tailwind + AOS: נטענים מ-src/main.js (Vite + PostCSS, ללא CDN) -->
+
+    <!-- Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "שגית מויאל - מטפלת רגשית CBT",
+      "image": "https://example.com/images/clinic-hero.avif",
+      "description": "טיפול רגשי בשיטת CBT בנתניה — לנשים ובני נוער. התמודדות עם חרדה, עומס רגשי, דחיינות וחוסר ביטחון.",
+      "telephone": "050-891-7898",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "נתניה",
+        "addressRegion": "קריית השרון",
+        "addressCountry": "IL"
+      },
+      "areaServed": { "@type": "City", "name": "נתניה" },
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden">
+
+    <!-- Root wrapper for outside click detection -->
+    <div id="a11y-root"></div>
+
+    <!-- Navbar -->
+    <nav class="glass-nav fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex-shrink-0 flex items-center gap-2 min-w-0 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lavender focus-visible:ring-offset-2" aria-label="לראש הדף">
+                    <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-brand-lavender to-brand-pink flex items-center justify-center text-brand-heading font-bold text-xl shadow-sm">ש</div>
+                    <span class="font-extrabold text-brand-heading tracking-tight text-sm sm:text-base md:text-lg leading-snug max-w-[min(100%,14rem)] sm:max-w-[min(100%,20rem)] md:max-w-none border-b-2 border-brand-lavender/70 pb-0.5">CBT Focus - שינוי שנראה לעין</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex flex-wrap gap-x-6 gap-y-2 justify-end items-center">
+                    <a href="#about" class="text-brand-heading font-medium hover:opacity-70 transition-opacity">נעים להכיר</a>
+                    <a href="#target" class="text-brand-heading font-medium hover:opacity-70 transition-opacity">למי זה מתאים?</a>
+                    <a href="#faq" class="text-brand-heading font-medium hover:opacity-70 transition-opacity">שאלות ותשובות</a>
+                    <a href="#why-clinic" class="text-brand-heading font-medium hover:opacity-70 transition-opacity">כך נראה תהליך שעובד</a>
+                    <a href="#value" class="text-brand-heading font-medium hover:opacity-70 transition-opacity">מה מקבלים בתהליך?</a>
+                    <a href="#contact" class="bg-brand-heading text-white px-5 py-2.5 rounded-full font-medium hover:opacity-90 transition-opacity shadow-sm shrink-0">שיחת ייעוץ ואבחון חינם</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-heading p-2 focus:outline-none" aria-label="תפריט">
+                        <i data-lucide="menu" class="w-7 h-7" id="menu-icon-open"></i>
+                        <i data-lucide="x" class="w-7 h-7 hidden" id="menu-icon-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="absolute top-20 start-0 w-full bg-white/95 backdrop-blur-xl border-t border-brand-text/10 opacity-0 pointer-events-none -translate-y-4 transition-all duration-300 md:hidden shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-3">
+                <a href="#about" class="mobile-link block px-3 py-3 rounded-xl text-base font-medium text-brand-heading hover:bg-brand-bg">נעים להכיר</a>
+                <a href="#target" class="mobile-link block px-3 py-3 rounded-xl text-base font-medium text-brand-heading hover:bg-brand-bg">למי זה מתאים?</a>
+                <a href="#faq" class="mobile-link block px-3 py-3 rounded-xl text-base font-medium text-brand-heading hover:bg-brand-bg">שאלות ותשובות</a>
+                <a href="#why-clinic" class="mobile-link block px-3 py-3 rounded-xl text-base font-medium text-brand-heading hover:bg-brand-bg">כך נראה תהליך שעובד</a>
+                <a href="#value" class="mobile-link block px-3 py-3 rounded-xl text-base font-medium text-brand-heading hover:bg-brand-bg">מה מקבלים בתהליך?</a>
+                <a href="#contact" class="mobile-link block mt-4 text-center bg-brand-heading text-white px-6 py-3 rounded-xl font-medium shadow-md">שיחת ייעוץ ואבחון חינם</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="site-content">
+    <!-- Hero Section — רקע תמונת קליניקה בהיר + תוכן -->
+    <header class="relative flex min-h-[min(88vh,52rem)] items-center overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-28">
+        <div class="hero-photo-layer absolute inset-0 z-0">
+            <img src="images/clinic-hero.avif" srcset="images/clinic-hero.avif 1200w" sizes="100vw" alt="חדר טיפול רגוע ומואר בקליניקה בנתניה — כורסה, ספרייה ואור טבעי מהחלון" width="1200" height="655" loading="eager" fetchpriority="high" decoding="async" class="hero-photo-img absolute inset-0 h-full w-full object-cover object-[32%_42%] sm:object-[36%_40%]">
+            <div class="hero-photo-scrim absolute inset-0 bg-gradient-to-b from-white/94 via-white/90 to-brand-bg/97"></div>
+            <div class="hero-photo-scrim absolute inset-0 bg-white/38"></div>
+            <div class="hero-photo-scrim absolute inset-0 bg-gradient-to-t from-brand-heading/[0.02] via-transparent to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-w-0">
+            <div data-aos="fade-up" data-aos-delay="0" class="max-w-2xl min-w-0">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm font-medium text-brand-heading mb-6 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-brand-lavender shrink-0" aria-hidden="true"></span>
+                    קליניקה בנתניה (קריית השרון)
+                </div>
+                <h1 class="hero-headline hero-text-glow text-4xl lg:text-5xl/tight font-bold text-brand-heading mb-3">
+                    טיפולים רגשיים בשיטת CBT<br>
+                    CBT Focus - שינוי שנראה לעין
+                </h1>
+                <p class="hero-text-glow text-xl font-semibold text-brand-heading mb-4 leading-relaxed">
+                    חרדה, חוסר ביטחון, דחיינות ועומס רגשי - <span class="text-highlight-heading">לא חייבים להמשיך לנהל אתכם!</span>
+                </p>
+                <p class="hero-text-glow text-lg font-bold text-brand-heading mb-6 leading-relaxed">
+                    מרגישה שהמחשבות מנהלות אותך? בטיפול CBT תלמדי לנהל אותן ולהחזיר לעצמך שליטה אמיתית בזמן קצר.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="https://wa.me/972508917898?text=%D7%94%D7%99%D7%99%20%D7%A9%D7%92%D7%99%D7%AA%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%97%D7%99%D7%A0%D7%9D" target="_blank" rel="noopener noreferrer" class="flex justify-center items-center gap-2 bg-brand-lavender text-brand-heading font-semibold px-8 py-4 rounded-full shadow-sm hover:opacity-90 transition-opacity text-center">
+                        שיחת ייעוץ ואבחון חינם
+                        <i data-lucide="arrow-left" class="w-5 h-5 shrink-0"></i>
+                    </a>
+                    <a href="#about" class="flex justify-center items-center px-8 py-4 rounded-full font-medium text-brand-heading bg-white/90 border-2 border-brand-lavender/70 hover:bg-white backdrop-blur-sm transition-colors shadow-sm">
+                        בואו נכיר קצת יותר
+                    </a>
+                </div>
+
+                <div class="glass-card rounded-2xl p-4 flex items-center gap-4 max-w-md shadow-sm border border-white/60">
+                    <div class="bg-white p-3 rounded-full text-brand-heading shadow-sm shrink-0">
+                        <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-brand-heading text-sm">מרחב בטוח, מקצועי ומכיל</p>
+                        <p class="text-xs text-brand-text/75">מקום שקט שבו אפשר לעצור, לדבר ולקבל עזרה</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- מה זה טיפול CBT -->
+    <section class="py-20 bg-brand-bg/60 relative" aria-labelledby="cbt-what-heading">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <div class="rounded-3xl bg-white border border-brand-lavender/25 shadow-sm p-8 sm:p-10 md:p-12 text-start">
+                <div class="mb-8" aria-hidden="true">
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-lavender/35 text-brand-heading">
+                        <i data-lucide="focus" class="w-6 h-6"></i>
+                    </span>
+                </div>
+                <h2 id="cbt-what-heading" class="text-2xl md:text-3xl font-bold text-brand-heading mb-6">
+                    מה זה טיפול CBT ולמה הוא נחשב כל כך יעיל?
+                </h2>
+                <p class="text-lg leading-relaxed text-brand-text mb-5">
+                    CBT (טיפול קוגניטיבי-התנהגותי) מתמקד בזיהוי ושינוי דפוסי חשיבה והתנהגות שמקשים על התפקוד היומיומי. הוא מוכח מחקרית כיעיל במיוחד לטיפול בחרדה, דיכאון, ביטחון עצמי ועוד.
+                </p>
+                <p class="text-lg leading-relaxed text-brand-text mb-5">
+                    טיפול CBT קצר מועד מתמקד בכאן ועכשיו: איך מחשבות, רגשות והתנהגות קשורים זה לזה וכיצד ניתן לשלוט בהם כאשר השינוי מורגש מבפנים ונראה לעין כבר מהמפגשים הראשונים.
+                </p>
+                <div class="my-6 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-brand-lavender/30 to-brand-pink/30 border border-brand-lavender/20">
+                    <p class="text-lg font-semibold text-brand-heading leading-relaxed">
+                        בזכות טיפול זה תהפכו ל "אני המאושר השמח והרגוע שלכם. עם ביטחון עצמי שלא תלויי באף אחד או בגורם חיצוני"
+                    </p>
+                </div>
+                <p class="text-lg leading-relaxed text-brand-text">
+                    השינוי לא נשאר רק בהבנה, הוא מורגש מבפנים ונראה בפועל כבר מהשלבים הראשונים.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About: רקע אבני איזון + פורטרט וטקסט «נעים להכיר» -->
+    <section id="about" class="relative py-20 md:py-28 overflow-hidden" aria-labelledby="about-heading">
+        <div class="about-photo-layer absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
+            <img src="images/balance-about.avif" srcset="images/balance-about.avif 1200w" sizes="100vw" alt="" width="1200" height="655" loading="lazy" fetchpriority="low" decoding="async" class="about-photo-img absolute inset-0 h-full w-full object-cover object-[center_42%] sm:object-[center_40%]">
+            <!-- אותן שכבות כמו ב-Hero: רקע בהיר + טקסט קריא -->
+            <div class="about-photo-scrim absolute inset-0 bg-gradient-to-b from-white/94 via-white/90 to-brand-bg/97"></div>
+            <div class="about-photo-scrim absolute inset-0 bg-white/38"></div>
+            <div class="about-photo-scrim absolute inset-0 bg-gradient-to-t from-brand-heading/[0.02] via-transparent to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 min-w-0">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <div data-aos="fade-up" data-aos-delay="60" class="relative order-1 flex flex-col justify-center md:justify-start min-w-0 items-center md:items-start">
+                    <p class="text-2xl sm:text-3xl font-bold text-brand-heading mb-6 text-center md:text-start w-full max-w-[22rem] sm:max-w-md">בואו נכיר קצת יותר</p>
+                    <div class="portrait-feature w-full max-w-[22rem] sm:max-w-md">
+                        <div class="portrait-feature-ring">
+                            <div class="portrait-feature-inner aspect-[4/5]">
+                                <img src="images/moyalfix.jpeg" srcset="images/moyalfix.jpeg 800w" sizes="(max-width: 768px) 88vw, 28rem" alt="שגית, מטפלת רגשית בשיטת CBT בנתניה" class="portrait-feature-img w-full h-full object-cover bg-brand-bg" width="800" height="755" loading="lazy" fetchpriority="low" decoding="async">
+                            </div>
+                        </div>
+                        <ul class="therapist-credentials" aria-label="השכלה וניסיון מקצועי">
+                            <li class="therapist-credentials__item">
+                                <span class="therapist-credentials__icon" aria-hidden="true"><i data-lucide="graduation-cap" class="w-5 h-5"></i></span>
+                                <span class="therapist-credentials__text">שגית — מטפלת רגשית CBT</span>
+                            </li>
+                            <li class="therapist-credentials__item">
+                                <span class="therapist-credentials__icon therapist-credentials__icon--alt" aria-hidden="true"><i data-lucide="book-open" class="w-5 h-5"></i></span>
+                                <span class="therapist-credentials__text">בעלת תואר ראשון B.Ed בחינוך</span>
+                            </li>
+                            <li class="therapist-credentials__item">
+                                <span class="therapist-credentials__icon" aria-hidden="true"><i data-lucide="award" class="w-5 h-5"></i></span>
+                                <span class="therapist-credentials__text">וותק של 20 שנה בתחום החינוך</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="120" class="order-2 min-w-0 rounded-3xl glass-card border border-white/60 shadow-sm p-6 sm:p-8 md:p-8">
+                    <p class="text-brand-heading font-semibold text-lg mb-2 flex items-center gap-2">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-brand-lavender shrink-0"></i>
+                        נעים להכיר,
+                    </p>
+                    <p class="text-brand-text text-lg mb-6 leading-relaxed">
+                        אני שגית, מטפלת רגשית בשיטת CBT.<br>
+                        נשואה ואמא לשניים.<br>
+                        בעלת תואר ראשון B.Ed בחינוך. בעלת תעודה של מטפלת רגשית CBT.<br>
+                        ועם וותק של 20 שנה בתחום החינוך כמורה ומחנכת, רכזת העצמה, מוגנות, בטחון ובטיחות. מומחית להוראה מתקנת ומותאמת.
+                    </p>
+                    <p class="text-brand-text text-lg mb-6 leading-relaxed">
+                        מאז ומתמיד מצאתי שאנשים מבקשים את העצה שלי - בין אם מדובר במשפחה וחברים, ובין אם בהורי תלמידים או בקולגות מתחום החינוך.<br>
+                        ניכר היה שיש ערך בנקודת המבט שלי, כיוון שכשהתבקשתי - הצלחתי להוביל אותם לשינוי תודעתי יעיל ומהיר - שהוביל לשינוי בגישה.<br>
+                        גיליתי יכולת לנסוך בשואלים את עצתי בטחון ואמונה עצמית שהשפיעו ישירות על תחושת החיוביות בחייהם.
+                    </p>
+                    <p class="text-brand-text text-lg mb-6 leading-relaxed">
+                        חלפו השנים ושמעתי יותר ויותר אנשים ששואלים אותי - איפה הקליניקה שלך? או מתי אפשר לקבוע טיפול?<br>
+                        הבנתי שזו הזדמנות ללמוד ולפתח מה שתמיד הרגיש לי טבעי ונכון - לעזור לאחרים לשפר את איכות חייהם.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience (למי זה מתאים?) -->
+    <section id="target" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 md:mb-10" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-heading">למי הטיפול מתאים?</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-lavender/25 hover:border-brand-lavender/50 shadow-sm hover:shadow-lg transition-all duration-300 ease-out group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-lavender/30 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="shield-alert" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-2">חוסר ביטחון עצמי</h3>
+                    <p class="text-brand-text/75">קושי להאמין בעצמכם וביכולות שלכם בחיי היום-יום.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-pink/30 hover:border-brand-pink/55 shadow-sm hover:shadow-lg transition-all duration-300 ease-out group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-pink/35 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="cloud-lightning" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-2">חרדות מכל הסוגים</h3>
+                    <p class="text-brand-text/75">
+                        חרדה כללית (GAD)<br>
+                        חרדה חברתית — קושי להבין סיטואציות חברתיות או הימנעות ממפגשים<br>
+                        פוביות מ-מעליות, נהיגה, חושך, בעלי חיים, חפצים, מחטים, מקום, אגורפוביה וכ"ו...<br>
+                        מחשבות טורדניות, התקפי חרדה או דאגות בלתי פוסקות.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-lavender/25 hover:border-brand-lavender/50 shadow-sm hover:shadow-lg transition-all duration-300 ease-out group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-lavender/30 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="clock" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-2">דחיינות וקושי להניע</h3>
+                    <p class="text-brand-text/75">תחושת תקיעות, הימנעות ממשימות וקושי לצאת לפעולה.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div data-aos="fade-up" data-aos-delay="400" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-pink/30 hover:border-brand-pink/55 shadow-sm hover:shadow-lg transition-all duration-300 ease-out group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-pink/35 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="brain-circuit" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-2">עומס רגשי</h3>
+                    <p class="text-brand-text/75">הצפה רגשית שמקשה על התפקוד היומיומי ועל קבלת החלטות.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div data-aos="fade-up" data-aos-delay="500" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-lavender/25 hover:border-brand-lavender/50 shadow-sm hover:shadow-lg transition-all duration-300 ease-out group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-lavender/30 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="zap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-2">טיפול בכעסים</h3>
+                    <p class="text-brand-text/75">הרגשת התפוצצות מהירה מידי גם מהדברים הכי קטנים, מה שמוביל לרגשות אשמה וכעס.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div data-aos="fade-up" data-aos-delay="600" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-pink/30 hover:border-brand-pink/55 shadow-sm hover:shadow-lg transition-all duration-300 ease-out group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-pink/35 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="cloud-rain" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-2">דיכאון קל עד בינוני</h3>
+                    <p class="text-brand-text/75">תחושת עצבות מתמשכת, חוסר אנרגיה ואיבוד עניין.</p>
+                </div>
+            </div>
+
+            <!-- Target summary — after the cards -->
+            <div class="max-w-4xl mx-auto mt-12" data-aos="fade-up">
+                <div class="rounded-3xl bg-white border border-brand-lavender/25 shadow-sm p-8 sm:p-10 md:p-12 text-start">
+                    <p class="text-lg sm:text-xl leading-relaxed font-semibold text-brand-heading mb-8">הטיפול הוא לנשים ובני נוער שרוצים שהחרדה/החסמים יפסיקו לנהל את חיי היום יום שלהם</p>
+                    <ul class="space-y-5 list-none p-0 m-0" role="list">
+                        <li class="flex items-start gap-4 rounded-2xl border border-brand-lavender/20 bg-brand-bg/40 px-5 py-4 sm:px-6 sm:py-5">
+                            <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-lavender text-brand-heading" aria-hidden="true">
+                                <i data-lucide="check" class="w-5 h-5"></i>
+                            </span>
+                            <div class="min-w-0 text-base sm:text-lg leading-relaxed">
+                                <strong class="text-brand-heading font-bold">נשים בכל שלבי החיים:</strong>
+                                <span class="text-brand-text"> ליווי רגשי סביב שינויי חיים, תחושת עומס, חרדות, בניית חוסן נפשי וחיזוק הביטחון העצמי בקבלת ההחלטות.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 rounded-2xl border border-brand-pink/25 bg-brand-bg/40 px-5 py-4 sm:px-6 sm:py-5">
+                            <span class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-pink text-brand-heading" aria-hidden="true">
+                                <i data-lucide="check" class="w-5 h-5"></i>
+                            </span>
+                            <div class="min-w-0 text-base sm:text-lg leading-relaxed">
+                                <strong class="text-brand-heading font-bold">בני נוער:</strong>
+                                <span class="text-brand-text"> טיפול בגובה העיניים בחרדות, קשיים חברתיים/חרמות, דחיינות וקשיי ויסות. הכל תוך מתן כלים פרקטיים להתמודדות יומיומית, וחיזוק תחושת המסוגלות העצמית מול אתגרי המסגרת.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-page CTA — שיחת ייעוץ ואבחון חינם #2 -->
+    <section class="py-16 bg-gradient-to-br from-brand-lavender/20 to-brand-pink/20">
+        <div class="max-w-xl mx-auto px-4 text-center" data-aos="fade-up">
+            <p class="text-xl font-semibold text-brand-heading mb-6 leading-relaxed">
+                הצעד הראשון לשינוי: אני מזמינה אתכם לשיחת התייעצות ראשונית ללא עלות.
+            </p>
+            <a href="tel:0508917898"
+               class="inline-flex items-center justify-center gap-3 bg-brand-lavender text-brand-heading font-bold text-lg px-10 py-4 rounded-full shadow-md hover:opacity-90 transition-opacity w-full sm:w-auto">
+                <i data-lucide="phone-call" class="w-5 h-5 shrink-0"></i>
+                שיחת ייעוץ ואבחון חינם
+            </a>
+            <p class="mt-3 text-brand-text font-semibold text-base">050-891-7898</p>
+        </div>
+    </section>
+
+    <!-- למה לבחור בקליניקה? -->
+    <section id="why-clinic" class="py-20 bg-brand-bg/80 relative" aria-labelledby="why-clinic-heading">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 id="why-clinic-heading" class="text-3xl md:text-4xl font-bold text-brand-heading mb-4">למה לבחור בקליניקה?</h2>
+                <p class="text-lg text-brand-text/75">ארבע סיבות מרכזיות שעושות את ההבדל — מהגישה המקצועית ועד הסביבה השקטה בנתניה.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6 lg:gap-8">
+                <div data-aos="fade-up" data-aos-delay="100" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-lavender/25 hover:border-brand-lavender/50 shadow-sm hover:shadow-lg transition-all duration-300 ease-out">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-lavender/30 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="layers" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-3">ניסיון מקצועי ועומק</h3>
+                    <p class="text-brand-text/75 leading-relaxed">שילוב של ליווי טיפולי ורקע חינוכי — הבנה מעשית של אנשים, משפחות וילדים, לא רק תיאוריה.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-pink/30 hover:border-brand-pink/55 shadow-sm hover:shadow-lg transition-all duration-300 ease-out">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-pink/35 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="target" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-3">תוצאות ותהליך ממוקד</h3>
+                    <p class="text-brand-text/75 leading-relaxed">גישת CBT ממוקדת — מטרות ברורות, מעקב אחר התקדמות וכלים שאפשר ליישם מחוץ לחדר הטיפולים.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300" class="glass-card bg-brand-bg/70 p-8 rounded-3xl border border-brand-lavender/25 hover:border-brand-lavender/50 shadow-sm hover:shadow-lg transition-all duration-300 ease-out">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-lavender/30 flex items-center justify-center text-brand-heading mb-6">
+                        <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-3">שירות אישי ומכבד</h3>
+                    <p class="text-brand-text/75 leading-relaxed">הקשבה אמיתית, התאמה לקצב שלכם וליווי שמכבד את הסיפור שלכם — בלי שיפוטיות.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400" class="why-card-featured glass-card bg-white/90 p-8 rounded-3xl border-2 border-brand-lavender shadow-xl hover:shadow-2xl transition-all duration-300 ease-out relative overflow-hidden">
+                    <span class="absolute top-4 end-4 rounded-full bg-brand-lavender/90 text-brand-heading text-xs font-bold px-3 py-1 shadow-sm">מרחב מוגן</span>
+                    <div class="w-14 h-14 rounded-2xl bg-brand-lavender/40 flex items-center justify-center text-brand-heading mb-6 mt-2">
+                        <i data-lucide="shield" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-heading mb-3">סביבה בטוחה ופרטית</h3>
+                    <p class="text-brand-text/80 leading-relaxed font-medium">קליניקה שקטה בנתניה (קריית השרון), כולל מרחב מוגן בממ&quot;ד — כדי שתוכלו לדבר ולהתמקד בשינוי בראש שקט.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What you will get (מה מקבלים בתהליך) -->
+    <section id="value" class="py-20 relative">
+        <div class="absolute inset-0 bg-brand-lavender/10 skew-y-3 transform origin-bottom-right -z-10"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-heading mb-12" data-aos="fade-up">מה תקבלו בתהליך?</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-lavender/20 flex items-start gap-4 transition-shadow duration-300 ease-out hover:shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mt-1 bg-brand-lavender p-2 rounded-full text-brand-heading"><i data-lucide="check" class="w-5 h-5"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-heading">ליווי מקצועי, אישי ומכיל</h3>
+                        <p class="text-brand-text/75">מרחב בטוח שבו אפשר להיות בדיוק מי שאתם, ללא שיפוטיות.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-lavender/20 flex items-start gap-4 transition-shadow duration-300 ease-out hover:shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mt-1 bg-brand-pink p-2 rounded-full text-brand-heading"><i data-lucide="check" class="w-5 h-5"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-heading">כלים פרקטיים ויישומיים</h3>
+                        <p class="text-brand-text/75">כבר מהמפגשים הראשונים תקבלו כלים שתוכלו להשתמש בהם בחיים עצמכם.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-lavender/20 flex items-start gap-4 transition-shadow duration-300 ease-out hover:shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mt-1 bg-brand-lavender p-2 rounded-full text-brand-heading"><i data-lucide="check" class="w-5 h-5"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-heading">תהליך ממוקד לשינוי אמיתי</h3>
+                        <p class="text-brand-text/75">טיפול שלא רק "מדבר", אלא מייצר שינוי התנהגותי בחיי היום-יום.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-lavender/20 flex items-start gap-4 transition-shadow duration-300 ease-out hover:shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="mt-1 bg-brand-pink p-2 rounded-full text-brand-heading"><i data-lucide="check" class="w-5 h-5"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-heading">חיזוק הביטחון העצמי והשקט הפנימי</h3>
+                        <p class="text-brand-text/75">הבנה עמוקה יותר של עצמכם, לצד תחושת יציבות, שקט ושלווה פנימית ויכולת משופרת להתמודד עם אתגרים.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10" data-aos="zoom-in">
+                <p class="inline-block bg-white px-6 py-3 rounded-full text-brand-heading font-semibold shadow-sm border border-brand-lavender/50">
+                    כבר מהמפגשים הראשונים אפשר להתחיל להרגיש שינוי אמיתי.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-brand-bg/60" aria-labelledby="faq-heading">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <h2 id="faq-heading" class="text-3xl md:text-4xl font-bold text-brand-heading">שאלות ותשובות</h2>
+            </div>
+            <div class="space-y-4" data-aos="fade-up">
+
+                <!-- Q1 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>האם CBT יעיל מטיפולים אחרים? (מוכח במחקרים רבים)</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        סיכום מטא-אנליזה של טולין — <a href="https://www.betipulnet.co.il/particles/%D7%94%D7%90%D7%9D_%D7%98%D7%99%D7%A4%D7%95%D7%9C_%D7%A7%D7%95%D7%92%D7%A0%D7%99%D7%98%D7%99%D7%91%D7%99_%D7%94%D7%AA%D7%A0%D7%94%D7%92%D7%95%D7%AA%D7%99_%D7%99%D7%A2%D7%99%D7%9C_%D7%9E%D7%98%D7%99%D7%A4%D7%95%D7%9C%D7%99%D7%9D_%D7%90%D7%97%D7%A8%D7%99%D7%9D_%D7%9E%D7%98%D7%90_%D7%90%D7%A0%D7%9C%D7%99%D7%96%D7%94" target="_blank" rel="noopener noreferrer" class="text-brand-heading font-medium underline underline-offset-2 hover:opacity-75">לקריאת המחקר המלא</a>
+                    </div>
+                </details>
+
+                <!-- Q2 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>מה הייחודיות שלי?</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        הייחודיות שלי נמצאת בשילוב המנצח בין ניסיון טיפולי לבין רקע חינוכי עמוק מהשטח. כאשת חינוך, אני נתקלת על בסיס יום יומי במגוון רחב של התמודדויות אצל אמהות צוותים ובני נוער. מפגשים אלה פיתחו אצלי חדות אבחנה מהירה ויכולת לזהות לעומק גם את מה שלא תמיד נאמר במילים. שנים אלו הפכו אותי למטפלת שמבינה לעומק תהליכים רגשיים, חברתיים והתנהגותיים, מטפלת שיודעת להתאים לכל מטופל/ת את הדרך הקצרה והמדויקת עבורם לשיפור חייהם.
+                    </div>
+                </details>
+
+                <!-- Q3 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>תוך כמה זמן אפשר לראות תוצאות בטיפול cbt?</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        CBT הוא טיפול ממוקד וקצר מועד יחסית, ניתן לחוות שיפור כבר תוך מספר שבועות ואפילו מהמפגשים הראשוניים. משך התהליך משתנה בהתאם לאופי הקושי, אך לרוב נע בין 10 ל-20 מפגשים. המטופל מקבל כלים פרקטיים ליישום מידי, מה שתורם לתחושת התקדמות כבר בשלבים הראשונים.
+                    </div>
+                </details>
+
+                <!-- Q4 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>למה להתחיל את הטיפול היום?</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        <p class="mb-3">כשמשהו מפריע לך בשוטף של היום היום אז כל יום שעובר הקושי עולה בכל תחומי החיים.</p>
+                        <ol class="list-decimal list-inside space-y-2 pr-1">
+                            <li><strong class="text-brand-heading">דפוסים מתקבעים:</strong> מחשבות, רגשות והתנהגויות לא נשארים אותו דבר הם מתחזקים. ככל שמחכים, ההרגלים נהיים אוטומטיים יותר וקשים יותר לשינוי.</li>
+                            <li><strong class="text-brand-heading">הבעיה מתרחבת:</strong> מה שהתחיל כקושי נקודתי יכול לזלוג לעוד תחומים: זוגיות, הורות, עבודה, ביטחון עצמי. בטיפול מוקדם עוצרים את ההתפשטות.</li>
+                            <li><strong class="text-brand-heading">המחיר הרגשי עולה:</strong> יותר תסכול, יותר עייפות נפשית, לפעמים גם פגיעה בדימוי העצמי. התחלה מוקדמת חוסכת "שחיקה" מיותרת.</li>
+                            <li><strong class="text-brand-heading">יש לך יותר שליטה מוקדם:</strong> CBT נותן כלים פרקטיים. ככל שמתחילים מוקדם, לומדים מהר יותר להשפיע על המחשבות והתגובות במקום להיגרר אחריהן.</li>
+                            <li><strong class="text-brand-heading">שינוי קורה מהר יותר:</strong> פרדוקס חשוב: מי שמתחיל מוקדם לרוב צריך פחות זמן טיפול. כי הבעיה עוד לא "הסתבכה".</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <!-- Q5 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>מהי חרדה וכיצד היא משפיעה?</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        חרדה היא תגובה טבעית של הגוף למצבי לחץ, אך כאשר היא מתמשכת או מופיעה בעוצמה גבוהה היא עלולה לפגוע באיכות החיים. אנשים המתמודדים עם חרדה חווים מחשבות טורדניות, דאגות מוגזמות, דופק מואץ, קושי בשינה ולעיתים גם התקפי חרדה פתאומיים. התחושה הזו עלולה לשתק, למנוע הנאה מהיומיום ולהגביל פעילויות בסיסיות כמו עבודה, לימודים או קשרים חברתיים.
+                    </div>
+                </details>
+
+                <!-- Q6 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>למה טיפול בחרדה משנה את המציאות היומיומית?</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        טיפול בחרדה נותן בסיס בטוח ומחזיר את האושר השלוות נפש הביטחון והשליטה לחיינו בהקדם, לעשות מה שבאמת טוב לנו ללא חששות ופחדים. טיפול בחרדה הוא הרבה יותר מתהליך רגשי הוא חזרה הדרגתית לשליטה פנימית. טיפול בחרדה מאפשר להבין למה הגוף מגיב בעוצמה, איך המחשבות מושפעות מהפחדים ואיך מחזירים שקט לאזורים שמרגישים מוצפים. בעזרת טיפול בחרדה לומדים לזהות את הטריגרים שמפעילים את המתח לפני שהוא גובר, לבנות חוסן רגשי ולבחור תגובה ולא אימפולס.
+                    </div>
+                </details>
+
+                <!-- Q7 -->
+                <details class="glass-card bg-white rounded-2xl border border-brand-lavender/25 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-bold text-brand-heading text-lg select-none hover:bg-brand-bg/40 transition-colors">
+                        <span>מה תקבלו בתהליך?</span>
+                        <span class="shrink-0 w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center shadow-sm transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d1b4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-2 text-brand-text leading-relaxed">
+                        ליווי מקצועי, אישי ומכיל. מרחב בטוח שבו אפשר להיות בדיוק מי שאתם, ללא שיפוטיות.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Clinic CTA -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card bg-gradient-to-br from-brand-lavender/30 to-brand-pink/30 rounded-[3rem] p-8 md:p-12 text-center relative overflow-hidden shadow-xl border-4 border-white" data-aos="zoom-in">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-heading mb-6">הצעד הראשון לשינוי</h2>
+                <p class="text-xl text-brand-text mb-4 max-w-2xl mx-auto leading-relaxed">
+                    אני מזמינה אתכם לשיחת התייעצות ראשונית <strong>ללא עלות</strong>, הכוללת גם אבחון התאמה, ותיאום ציפיות.
+                </p>
+                <p class="text-xl font-semibold text-brand-heading mb-4 max-w-2xl mx-auto leading-relaxed">
+                    כל דקה שעוברת עם הקושי הזה-מקשה יותר! בואי נקבע שיחה ונתחיל בשינוי כבר היום
+                </p>
+                <p class="text-lg text-brand-text mb-10 max-w-2xl mx-auto leading-relaxed">
+                    הצעד הראשון לשינוי מתחיל בתעוזה שלך לפנות עכשיו
+                </p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+                    <!-- WhatsApp CTA -->
+                    <a href="https://wa.me/972508917898?text=%D7%94%D7%99%D7%99%20%D7%A9%D7%92%D7%99%D7%AA%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%A9%D7%AA%D7%97%D7%96%D7%A8%D7%99%20%D7%90%D7%9C%D7%99%20%D7%9C%D7%A9%D7%99%D7%97%D7%94%20%D7%A9%D7%9B%D7%95%D7%9C%D7%9C%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%95%D7%90%D7%91%D7%97%D7%95%D7%9F%20%D7%9C%D7%9C%D7%90%20%D7%A2%D7%9C%D7%95%D7%AA" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto flex items-center justify-center gap-3 bg-brand-wa hover:bg-brand-wa-hover text-white font-semibold text-lg sm:text-xl px-8 sm:px-10 py-5 rounded-full shadow-md transition-opacity hover:opacity-95 text-center">
+                        <i data-lucide="message-circle" class="w-7 h-7 shrink-0"></i>
+                        שיחת ייעוץ ואבחון חינם
+                    </a>
+                    
+                    <!-- Phone CTA -->
+                    <a href="tel:0508917898" class="w-full md:w-auto flex flex-col sm:flex-row items-center justify-center gap-2 gap-x-3 bg-white text-brand-heading font-semibold text-lg sm:text-xl px-8 sm:px-10 py-5 rounded-full shadow-sm hover:shadow-md transition-shadow border border-brand-lavender/35 text-center">
+                        <span class="flex items-center gap-2">
+                            <i data-lucide="phone-call" class="w-6 h-6 text-brand-lavender shrink-0"></i>
+                            שיחת ייעוץ ואבחון חינם
+                        </span>
+                        <span class="text-base font-bold text-brand-text/80">050-891-7898</span>
+                    </a>
+                </div>
+
+                <!-- Clinic Details -->
+                <div class="border-t border-white/50 pt-8 flex flex-col md:flex-row items-center justify-center gap-8 text-brand-text font-medium">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="map-pin" class="text-brand-lavender"></i>
+                        <span>הקליניקה ממוקמת בנתניה (קריית השרון)</span>
+                    </div>
+                    <div class="hidden md:block w-2 h-2 rounded-full bg-brand-pink"></div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shield-check" class="text-brand-lavender"></i>
+                        <span>מרחב פרטי רגוע בטוח ובטיחותי (בממ"ד)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-bg border-t border-brand-text/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-brand-lavender to-brand-pink flex items-center justify-center text-brand-heading font-bold text-xl mb-6">ש</div>
+            <h3 class="text-xl font-bold text-brand-heading mb-2">שגית</h3>
+            <p class="text-brand-text mb-6">מטפלת רגשית בשיטת CBT · נשים ובני נוער</p>
+            <nav class="text-sm text-brand-text flex flex-wrap justify-center items-center gap-x-2 gap-y-2 mb-4" aria-label="מסמכים משפטיים">
+                <a href="privacy.html" class="font-medium text-brand-heading underline decoration-brand-text/35 underline-offset-2 hover:decoration-brand-heading">מדיניות פרטיות</a>
+                <span aria-hidden="true" class="text-brand-text/50 select-none">•</span>
+                <a href="terms.html" class="font-medium text-brand-heading underline decoration-brand-text/35 underline-offset-2 hover:decoration-brand-heading">תנאי שימוש</a>
+                <span aria-hidden="true" class="text-brand-text/50 select-none">•</span>
+                <a href="accessibility.html" class="font-medium text-brand-heading underline decoration-brand-text/35 underline-offset-2 hover:decoration-brand-heading">הצהרת נגישות</a>
+            </nav>
+            <p class="text-sm text-brand-text mb-4">© 2026 עידן החידוש. כל הזכויות שמורות.</p>
+            <div class="mt-10 pt-8 border-t border-brand-text/10 max-w-md mx-auto" role="presentation">
+                <p class="text-xs sm:text-sm text-brand-text leading-relaxed tracking-wide">
+                    עוצב ופותח על ידי
+                    <span lang="en" dir="ltr" class="inline-block ms-1.5 font-semibold text-brand-heading tracking-tight">WiseWheel Automate</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    </div><!-- /#site-content -->
+
+    <!-- Accessibility FAB - Bottom Left -->
+    <button id="a11y-fab" type="button" aria-label="פתח תפריט נגישות" aria-expanded="false" class="focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-phone focus-visible:ring-offset-2">
+        <i data-lucide="accessibility" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Accessibility Panel Backdrop -->
+    <div id="a11y-backdrop" aria-hidden="true"></div>
+
+    <!-- Accessibility Panel - Glass-morphism Drawer -->
+    <div id="a11y-panel" role="dialog" aria-labelledby="a11y-title" aria-hidden="true">
+        <div class="a11y-panel-header">
+            <h3 id="a11y-title" class="text-sm font-bold text-brand-heading">נגישות</h3>
+            <button id="a11y-close" type="button" class="a11y-close-btn focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-phone" aria-label="סגור תפריט נגישות">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+        <div class="a11y-panel-content">
+            <p class="a11y-section-title">גודל טקסט</p>
+            <div class="a11y-font-controls">
+                <button type="button" id="a11y-font-down" class="a11y-chip focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-phone" aria-label="הקטנת טקסט">א−</button>
+                <button type="button" id="a11y-font-reset" class="a11y-chip focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-phone" aria-label="גודל טקסט ברירת מחדל">100%</button>
+                <button type="button" id="a11y-font-up" class="a11y-chip focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-phone" aria-label="הגדלת טקסט">א+</button>
+            </div>
+
+            <p class="a11y-section-title">התאמות ראייה</p>
+            <div class="space-y-2">
+                <button type="button" id="a11y-toggle-grayscale" class="a11y-toggle-row" aria-pressed="false" data-a11y-toggle="grayscale">
+                    <span class="a11y-toggle-info">
+                        <span class="a11y-toggle-label">גווני אפור</span>
+                        <span class="a11y-toggle-desc">הצגת האתר ללא צבע</span>
+                    </span>
+                    <span class="a11y-toggle-indicator" aria-hidden="true">
+                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </span>
+                </button>
+                <button type="button" id="a11y-toggle-contrast" class="a11y-toggle-row" aria-pressed="false" data-a11y-toggle="high-contrast">
+                    <span class="a11y-toggle-info">
+                        <span class="a11y-toggle-label">ניגודיות גבוהה</span>
+                        <span class="a11y-toggle-desc">הדגשת ניגוד בתוכן</span>
+                    </span>
+                    <span class="a11y-toggle-indicator" aria-hidden="true">
+                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </span>
+                </button>
+                <button type="button" id="a11y-toggle-readable" class="a11y-toggle-row" aria-pressed="false" data-a11y-toggle="readable-font">
+                    <span class="a11y-toggle-info">
+                        <span class="a11y-toggle-label">גופן קריא</span>
+                        <span class="a11y-toggle-desc">גופן מערכת פשוט</span>
+                    </span>
+                    <span class="a11y-toggle-indicator" aria-hidden="true">
+                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </span>
+                </button>
+                <button type="button" id="a11y-toggle-links" class="a11y-toggle-row" aria-pressed="false" data-a11y-toggle="links-highlight">
+                    <span class="a11y-toggle-info">
+                        <span class="a11y-toggle-label">הדגשת קישורים</span>
+                        <span class="a11y-toggle-desc">מסגרת ברורה לקישורים</span>
+                    </span>
+                    <span class="a11y-toggle-indicator" aria-hidden="true">
+                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </span>
+                </button>
+            </div>
+
+            <button type="button" id="a11y-reset-all" class="a11y-reset-btn focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-phone">
+                איפוס הגדרות
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Phone Button (Bottom End) -->
+    <div class="fixed bottom-6 end-6 z-[103] group">
+        <!-- Pulse Ring Behind -->
+        <div class="absolute inset-0 border border-brand-phone rounded-full animate-pulseRing"></div>
+        
+        <!-- Button -->
+        <a href="tel:0508917898" aria-label="התקשרו — שיחת ייעוץ ואבחון חינם" class="relative w-16 h-16 bg-brand-phone rounded-full flex items-center justify-center shadow-premium hover:opacity-90 transition-opacity duration-300">
+            <!-- SVG Phone Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-white w-7 h-7 relative z-10">
+                <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Button (Bottom Start, Custom SVG) -->
+    <div class="fixed bottom-6 start-6 z-[103] group">
+        <!-- Pulse Ring Behind -->
+        <div class="absolute inset-0 border border-brand-wa rounded-full animate-pulseRing"></div>
+
+        <!-- Button -->
+        <a href="https://wa.me/972508917898?text=%D7%94%D7%99%D7%99%20%D7%A9%D7%92%D7%99%D7%AA%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%A9%D7%AA%D7%97%D7%96%D7%A8%D7%99%20%D7%90%D7%9C%D7%99%20%D7%9C%D7%A9%D7%99%D7%97%D7%94%20%D7%A9%D7%9B%D7%95%D7%9C%D7%9C%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%95%D7%90%D7%91%D7%97%D7%95%D7%9F%20%D7%9C%D7%9C%D7%90%20%D7%A2%D7%9C%D7%95%D7%AA" target="_blank" rel="noopener noreferrer" aria-label="שלחו וואטסאפ — שיחת ייעוץ ואבחון חינם" class="relative w-16 h-16 bg-gradient-to-tr from-brand-wa-teal to-brand-wa rounded-full flex items-center justify-center shadow-premium hover:opacity-90 transition-opacity duration-300">
+            <!-- SVG WhatsApp Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-white w-9 h-9 relative z-10">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts: מודולים מקומיים בלבד -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/accessibility.js"></script>
+</body>
+</html>

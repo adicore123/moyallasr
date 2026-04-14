@@ -1,0 +1,730 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Heebo — אירוח עצמי (ללא Google Fonts)
+ * font-display: swap — מפחית חסימת רינדור (מדדי Lighthouse / Core Web Vitals)
+ * קבצים ב-public/fonts (מוגשים מנתיב /fonts/… בזמן ריצה וב-build)
+ */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('fonts/heebo-v28-hebrew_latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/heebo-v28-hebrew_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/heebo-v28-hebrew_latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/heebo-v28-hebrew_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('fonts/heebo-v28-hebrew_latin-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('fonts/heebo-v28-hebrew_latin-900.woff2') format('woff2');
+}
+
+/* Navbar glass */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+/* Cards / pills glass */
+.glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 24px rgba(45, 55, 72, 0.06);
+}
+
+.hero-headline {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* הילה לבנה סביב טקסטי ה-Hero לקריאות על רקע תמונה */
+.hero-text-glow {
+    text-shadow:
+        0 0 8px  rgba(255, 255, 255, 0.95),
+        0 0 18px rgba(255, 255, 255, 0.85),
+        0 0 35px rgba(255, 255, 255, 0.70),
+        0 0 60px rgba(255, 255, 255, 0.45);
+}
+
+/* הדגשה בכותרת — קו תחתון עורכי (ללא "מריחת" רקע שבורה בשורות) */
+.text-highlight-heading {
+    color: #1A202C;
+    font-weight: 800;
+    text-decoration-line: underline;
+    text-decoration-color: rgba(208, 203, 242, 0.95);
+    text-decoration-thickness: 0.28em;
+    text-underline-offset: 0.1em;
+    text-decoration-skip-ink: auto;
+}
+
+/* Accessibility FAB - Bottom Left, above WhatsApp */
+#a11y-fab {
+    position: fixed;
+    bottom: 5.5rem;
+    start: 1.5rem;
+    z-index: 104;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid #D0CBF2;
+    box-shadow: 0 4px 20px rgba(45, 55, 72, 0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#a11y-fab:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(45, 55, 72, 0.2);
+}
+
+#a11y-fab:focus {
+    outline: 2px solid #1F75ED;
+    outline-offset: 2px;
+}
+
+#a11y-fab[data-lucide] {
+    color: #1A202C;
+}
+
+/* Accessibility Panel - Glass-morphism drawer */
+#a11y-panel {
+    position: fixed;
+    bottom: 8.5rem;
+    start: 1.5rem;
+    z-index: 105;
+    width: 17rem;
+    max-height: calc(100vh - 10rem);
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 1rem;
+    border: 1px solid rgba(208, 203, 242, 0.5);
+    box-shadow: 0 8px 32px rgba(45, 55, 72, 0.12);
+    transform: translateY(0.75rem) scale(0.96);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#a11y-panel.is-open {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#a11y-panel::-webkit-scrollbar {
+    width: 0.375rem;
+}
+
+#a11y-panel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#a11y-panel::-webkit-scrollbar-thumb {
+    background: rgba(208, 203, 242, 0.6);
+    border-radius: 0.25rem;
+}
+
+/* Accessibility Panel Backdrop */
+#a11y-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 104;
+    background: transparent;
+    pointer-events: none;
+    transition: background 0.2s ease;
+}
+
+#a11y-backdrop.is-visible {
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+}
+
+/* A11y Panel Internals */
+.a11y-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem 0.75rem;
+    border-bottom: 1px solid rgba(208, 203, 242, 0.4);
+}
+
+.a11y-panel-header h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1A202C;
+}
+
+.a11y-close-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: #2D3748;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.a11y-close-btn:hover {
+    background: rgba(208, 203, 242, 0.4);
+}
+
+.a11y-close-btn:focus {
+    outline: 2px solid #1F75ED;
+    outline-offset: 1px;
+}
+
+.a11y-panel-content {
+    padding: 0.75rem 1rem 1rem;
+}
+
+.a11y-section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.a11y-font-controls {
+    display: flex;
+    gap: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.a11y-chip {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(208, 203, 242, 0.6);
+    background: white;
+    color: #1A202C;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.a11y-chip:hover {
+    background: rgba(208, 203, 242, 0.3);
+    border-color: #D0CBF2;
+}
+
+.a11y-chip:focus {
+    outline: 2px solid #1F75ED;
+    outline-offset: 1px;
+}
+
+.a11y-toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(208, 203, 242, 0.4);
+    background: white;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.a11y-toggle-row:hover {
+    background: rgba(247, 218, 243, 0.2);
+    border-color: #F7DAF3;
+}
+
+.a11y-toggle-row:focus-within {
+    outline: 2px solid #1F75ED;
+    outline-offset: 1px;
+}
+
+.a11y-toggle-row[aria-pressed="true"] {
+    background: rgba(208, 203, 242, 0.25);
+    border-color: #D0CBF2;
+}
+
+.a11y-toggle-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.a11y-toggle-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.a11y-toggle-desc {
+    font-size: 0.7rem;
+    color: #718096;
+    margin-top: 0.125rem;
+}
+
+.a11y-toggle-indicator {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    border: 2px solid #CBD5E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+    flex-shrink: 0;
+}
+
+.a11y-toggle-row[aria-pressed="true"] .a11y-toggle-indicator {
+    background: #D0CBF2;
+    border-color: #D0CBF2;
+}
+
+.a11y-toggle-indicator svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    color: #1A202C;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.a11y-toggle-row[aria-pressed="true"] .a11y-toggle-indicator svg {
+    opacity: 1;
+}
+
+.a11y-reset-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: 2px solid rgba(208, 203, 242, 0.7);
+    background: white;
+    color: #1A202C;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.75rem;
+    transition: all 0.15s ease;
+}
+
+.a11y-reset-btn:hover {
+    background: rgba(247, 218, 243, 0.3);
+    border-color: #F7DAF3;
+}
+
+.a11y-reset-btn:focus {
+    outline: 2px solid #1F75ED;
+    outline-offset: 2px;
+}
+
+/* Accessibility Filters applied to #site-content */
+#site-content.a11y-grayscale {
+    filter: grayscale(100%);
+}
+
+#site-content.a11y-high-contrast {
+    filter: contrast(140%);
+}
+
+#site-content.a11y-readable-font {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+#site-content.a11y-links-highlight a:not(.a11y-exclude) {
+    outline: 2px solid #1F75ED !important;
+    outline-offset: 2px !important;
+    border-radius: 2px;
+}
+
+/* Ensure fixed elements stay above filters (filters on wrapper only) */
+.fixed {
+    position: fixed;
+}
+
+/* פורטרט מוביל — מסגרת ואנימציית כניסה עדינה */
+.portrait-feature-ring {
+    border-radius: 2rem;
+    padding: 3px;
+    background: linear-gradient(145deg, #D0CBF2 0%, #F7DAF3 50%, #D0CBF2 100%);
+    background-size: 200% 200%;
+    box-shadow:
+        0 4px 6px -1px rgba(26, 32, 28, 0.06),
+        0 20px 40px -15px rgba(26, 32, 28, 0.12);
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .portrait-feature-ring {
+        animation: portraitRingGlow 8s ease-in-out infinite;
+    }
+
+    @keyframes portraitRingGlow {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+    }
+}
+
+.portrait-feature:hover .portrait-feature-ring {
+    transform: translateY(-6px);
+    box-shadow:
+        0 8px 12px -2px rgba(26, 32, 28, 0.08),
+        0 28px 50px -18px rgba(208, 203, 242, 0.45);
+}
+
+.portrait-feature-inner {
+    border-radius: calc(2rem - 3px);
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.portrait-feature-img {
+    object-position: 50% 35%;
+}
+
+/* פס יוקרה תחת פורטרט — השכלה וניסיון (בולט, קריא, מינימליסטי) */
+.therapist-credentials {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 1rem 1.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    text-align: start;
+    border-radius: 1.125rem;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(208, 203, 242, 0.5);
+    box-shadow:
+        0 1px 2px rgba(26, 32, 44, 0.04),
+        0 8px 24px -8px rgba(208, 203, 242, 0.35);
+    border-inline-start: 3px solid rgba(208, 203, 242, 0.95);
+}
+
+@media (min-width: 768px) {
+    .therapist-credentials {
+        padding: 1.125rem 1.25rem;
+        gap: 0.95rem;
+    }
+}
+
+.therapist-credentials__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.therapist-credentials__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-top: 0.125rem;
+    border-radius: 0.625rem;
+    background: rgba(208, 203, 242, 0.4);
+    color: #1a202c;
+}
+
+.therapist-credentials__icon--alt {
+    background: rgba(247, 218, 243, 0.55);
+}
+
+.therapist-credentials__text {
+    flex: 1;
+    min-width: 0;
+    font-size: clamp(0.98rem, 2.4vw, 1.125rem);
+    font-weight: 600;
+    color: #1a202c;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+/* מרכוז במובייל כשהעמודה ממורכזת */
+@media (max-width: 767px) {
+    .therapist-credentials {
+        text-align: center;
+        max-width: 22rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .therapist-credentials__item {
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .therapist-credentials__text {
+        text-align: start;
+        flex: 1;
+    }
+}
+
+/* רקעי תמונה מלאים ב-Hero וב-About — מילוי קנבס ללא רווחים */
+.hero-photo-img,
+.about-photo-img {
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.55;
+}
+
+/* Floating blobs */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-6px) scale(1.01);
+    }
+}
+
+.animate-float {
+    animation: float 10s ease-in-out infinite;
+}
+
+/* Image frame subtle lift */
+.img-wrapper {
+    box-shadow:
+        0 25px 50px -12px rgba(45, 55, 72, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+}
+
+.shadow-premium {
+    box-shadow:
+        0 20px 40px -15px rgba(26, 32, 28, 0.12),
+        0 8px 20px -10px rgba(26, 32, 28, 0.08);
+}
+
+/* כרטיס מודגש — סעיף ממ"ד באזור "למה לבחור בקליניקה?" */
+.why-card-featured {
+    box-shadow:
+        0 12px 40px -10px rgba(208, 203, 242, 0.65),
+        0 0 0 2px rgba(208, 203, 242, 0.95),
+        0 25px 50px -12px rgba(26, 32, 28, 0.12);
+}
+
+@media (min-width: 768px) {
+    .why-card-featured {
+        transform: scale(1.02);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .why-card-featured {
+        transform: none;
+    }
+}
+
+/* Floating CTA pulse ring */
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.35;
+    }
+    100% {
+        transform: scale(1.28);
+        opacity: 0;
+    }
+}
+
+.animate-pulseRing {
+    animation: pulseRing 2.8s ease-out infinite;
+}
+
+/* נגישות: כיבוי אנימציות לפי העדפת מערכת */
+@media (prefers-reduced-motion: reduce) {
+    html.reduce-motion,
+    html.reduce-motion * {
+        scroll-behavior: auto !important;
+    }
+
+    .animate-float,
+    .animate-pulseRing {
+        animation: none !important;
+    }
+
+    .portrait-feature-ring {
+        animation: none !important;
+    }
+
+    .portrait-feature:hover .portrait-feature-ring {
+        transform: none;
+    }
+
+    .a11y-panel,
+    .a11y-backdrop {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ——— תפריט נגישות (מחוץ ל־#site-content) ——— */
+.a11y-backdrop.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.a11y-panel {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.98);
+    pointer-events: none;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s;
+}
+
+.a11y-panel.is-open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+.a11y-btn.a11y-chip {
+    min-width: 2.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(45, 55, 72, 0.18);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0.35rem 0.65rem;
+    font-weight: 600;
+    color: #1a202c;
+    transition: background 0.15s ease;
+}
+
+.a11y-btn.a11y-chip:hover {
+    background: rgba(208, 203, 242, 0.35);
+}
+
+.a11y-btn:focus-visible {
+    outline: 2px solid #d0cbf2;
+    outline-offset: 2px;
+}
+
+.a11y-btn.a11y-row {
+    border-radius: 0.875rem;
+    border: 1px solid rgba(45, 55, 72, 0.12);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.65rem 0.75rem;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.a11y-btn.a11y-row:hover {
+    background: rgba(245, 247, 247, 0.95);
+    border-color: rgba(208, 203, 242, 0.5);
+}
+
+.a11y-btn.a11y-row[aria-pressed="true"] {
+    border-color: rgba(208, 203, 242, 0.85);
+    background: rgba(208, 203, 242, 0.28);
+    box-shadow: inset 0 0 0 1px rgba(26, 32, 44, 0.06);
+}
+
+/* FAB: נשאר קריא גם במצבי מערכת / ניגודיות */
+.a11y-fab {
+    background-color: #1a202c !important;
+    color: #fff !important;
+}
+
+.a11y-fab-icon {
+    color: #fff !important;
+    stroke: #fff !important;
+}
+
+/* מסננים רק על תוכן האתר */
+#site-content.a11y-grayscale {
+    filter: grayscale(1);
+}
+
+#site-content.a11y-high-contrast {
+    filter: contrast(1.3) saturate(1.12);
+}
+
+#site-content.a11y-grayscale.a11y-high-contrast {
+    filter: grayscale(1) contrast(1.35);
+}
+
+#site-content.a11y-readable-font,
+#site-content.a11y-readable-font * {
+    font-family:
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif !important;
+}
+
+#site-content.a11y-links-highlight a[href] {
+    outline: 2px solid currentColor !important;
+    outline-offset: 3px !important;
+    text-decoration: underline !important;
+    text-underline-offset: 0.2em;
+}
+
+#site-content.a11y-links-highlight a[href]:focus-visible {
+    outline-width: 3px;
+}
+
+/* דפי מסמכים משפטיים */
+.legal-doc {
+    line-height: 1.75;
+}
+
+.legal-doc h1 {
+    line-height: 1.3;
+}
+
+.legal-doc h2 {
+    line-height: 1.35;
+}
